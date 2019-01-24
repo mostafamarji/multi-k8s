@@ -1,6 +1,6 @@
 docker build -t mostafamarji/multi-client:latest -t mostafamarji/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t mostafamarji/multi-server:latest -t mostafamarji/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t mostafamarji/multi-worker:latest -t mostafamarji/multi-worker:$SHA -f ./worder/Dockerfile ./worker
+docker build -t mostafamarji/multi-worker:latest -t mostafamarji/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push mostafamarji/multi-client:latest
 docker push mostafamarji/multi-server:latest
